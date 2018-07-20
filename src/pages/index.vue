@@ -30,7 +30,7 @@
     import Footer from '../components/footer'
     import Alert from '../components/alert'
     // let token =  window.location.search.substring(7);
-    let token = '9c51125d4c37876f9a70f750449ec379';
+    let token = '8074cbe52eacab89d9a13b3c36d03dc4';
     console.log(token);
     if(token){
         localStorage.setItem("token",token);
