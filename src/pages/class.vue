@@ -49,6 +49,9 @@
         components:{
             Footer
         },
+      metaInfo: {
+        title: '产品分类'
+      },
         mounted () {
             this.getHeader();
             this.getRes(19);

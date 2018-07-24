@@ -68,6 +68,9 @@
         components: {
             Alert
         },
+      metaInfo: {
+        title: '地址列表'
+      },
         mounted () {
           this.getAddrList();
         },

@@ -6,6 +6,7 @@ const baseConfig = require('./webpack.config.base.js')
 
 
 
+
 let config
 config = merge(baseConfig,{
   module:{
@@ -25,7 +26,7 @@ config = merge(baseConfig,{
           options: {
             limit:1000,
             name:'img/[name]-[hash:4].[ext]',
-            publicPath:'/',
+            // publicPath:'/',
           }
         }
       }

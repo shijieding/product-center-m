@@ -24,6 +24,9 @@
                 totalPrice:''
             }
         },
+      metaInfo: {
+        title: '支付'
+      },
         components: {},
         mounted () {
             this.num = this.$route.query.num;

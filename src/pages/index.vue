@@ -29,42 +29,58 @@
 
     import Footer from '../components/footer'
     import Alert from '../components/alert'
-    // let token =  window.location.search.substring(7);
-    let token = '8074cbe52eacab89d9a13b3c36d03dc4';
-    console.log(token);
-    if(token){
-        localStorage.setItem("token",token);
-    }
+
+
     export default {
         data () {
             return {
                 cur:'index',
                 img_path:'http://znswsse.com:8031/',
-                showAlert:true,
-                pList:[]
+                showAlert:true
             }
+        },
+        metaInfo: {
+          title: '产品中心'
         },
         components:{
             Footer,Alert
         },
+        computed: {
+          pList () {
+            return this.$store.state.pList;
+          }
+        },
         mounted () {
+          console.log('+++++++++',this.pList)
+/*          if(this.pList && this.pList.length < 1){
             this.getPList();
+          }*/
         },
         created () {
 
         },
+        asyncData ({ store }) {
+          return store.dispatch('getRes')
+        },
+        beforeRouteLeave (to,from,next) {
+          let token =  window.location.search.substring(7);
+          // let token = '2991a089901708ec5211c7a78a53bb18';
+          console.log(token);
+          if(token){
+            localStorage.setItem("token",token);
+          }
+          next();
+        },
         methods:{
-            getPList () {
-                this.$emit('loadShow',true);
-                this.axios.get('/product').then(msg=>{
-                    console.log(msg);
-                    this.pList = msg.data.res_infor;
-                    this.$emit('loadShow',false);
-                }).catch(err=>{
-                    console.log(err);
-                    this.$emit('loadErrShow',true);
-                })
-            },
+            // getPList () {
+            //     this.$emit('loadShow',true);
+            //     this.axios.get('/product').then(msg=>{
+            //         this.pList = msg.data.res_infor;
+            //         this.$emit('loadShow',false);
+            //     }).catch(err=>{
+            //         this.$emit('loadErrShow',true);
+            //     })
+            // },
             myCloseAlert (bool) {
                 this.showAlert = false;
                 if(bool){

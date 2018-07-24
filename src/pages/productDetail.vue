@@ -71,6 +71,9 @@
                 token:localStorage.getItem('token')
             }
         },
+      metaInfo: {
+        title: '产品详情'
+      },
         props:['id'],
         watch:{
           '$route' (to, from) {

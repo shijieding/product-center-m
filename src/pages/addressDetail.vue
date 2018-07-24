@@ -99,6 +99,9 @@
                 this.getAddr(this.addrId);
             }
         },
+      metaInfo: {
+        title: '地址详情'
+      },
         components: {
 
         },

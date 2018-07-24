@@ -15,8 +15,7 @@
       },
       methods: {
         loaderr () {
-          console.log('dianji')
-          this.$emit('loadErrShow', false)
+          this.$store.commit('endLoadErr')
         }
       }
     }

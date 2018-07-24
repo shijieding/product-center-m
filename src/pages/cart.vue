@@ -155,6 +155,9 @@
                 token:localStorage.getItem('token')
             }
         },
+      metaInfo: {
+        title: '购物车'
+      },
         components:{
             Footer,Alert
         },

@@ -15,6 +15,9 @@
         data() {
             return {}
         },
+      metaInfo: {
+        title: '支付完成'
+      },
         components: {},
         methods: {
 

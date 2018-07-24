@@ -146,6 +146,9 @@
                 token:localStorage.getItem('token')
             }
         },
+      metaInfo: {
+        title: '个人中心'
+      },
         components:{
             Footer
         },

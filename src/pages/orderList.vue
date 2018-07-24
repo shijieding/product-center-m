@@ -61,6 +61,9 @@
                 token:localStorage.getItem('token')
             }
         },
+      metaInfo: {
+        title: '订单列表'
+      },
         components: {
 
         },

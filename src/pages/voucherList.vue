@@ -141,6 +141,9 @@
         components: {
 
         },
+      metaInfo: {
+        title: '订单列表'
+      },
         mounted () {
             this.getZV();
             this.getPV();

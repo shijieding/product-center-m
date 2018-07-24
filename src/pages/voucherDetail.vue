@@ -168,6 +168,9 @@
         components: {
 
         },
+      metaInfo: {
+        title: '订单详情'
+      },
         mounted () {
             this.vid = this.$route.query.id;
             this.voucherType = this.$route.query.voucher;

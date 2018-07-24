@@ -3,18 +3,22 @@ const merge = require('webpack-merge')
 const webpack = require('webpack')
 const baseConfig = require('./webpack.config.base.js')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const VueServerPlugin = require('vue-server-renderer/server-plugin')
+
 
 
 let config
 config = merge(baseConfig,{
+  target:'node',
   entry:{
-    app:path.join(__dirname,'../src/client-entry.js')
+    app:path.join(__dirname,'../src/server-entry.js')
   },
   output:{
-    filename:'js/[name].[chunkhash:8].js',
-    // publicPath: 'http://ssfile.znswsse.com/product/mobile/',
-    publicPath: '/dist/'
+    libraryTarget:'commonjs2',
+    filename:'server-entry.js',
+    path:path.join(__dirname,'../server-build')
   },
+  externals:Object.keys(require('../package.json').dependencies),
   module:{
     rules:[
       {
@@ -43,7 +47,12 @@ config = merge(baseConfig,{
     new MiniCssExtractPlugin({
       filename: "[name].[chunkhash:8].css",
       chunkFilename: "css/[id].css"
-    })
+    }),
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
+      'process.env.VUE_ENV': '"server"'
+    }),
+    new VueServerPlugin()
   ]
 })
 

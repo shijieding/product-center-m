@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
-    <router-view v-on:loadShow="loadShow" v-on:loadErrShow="loadErrShow"></router-view>
+  <div id="app" style="background-color: #000;height:100%;">
+    <router-view></router-view>
     <Load v-show="loading"></Load>
-    <LoadErr v-show="loaderr" v-on:loadErrShow="loadErrShow"></LoadErr>
+    <LoadErr v-show="loaderr"></LoadErr>
   </div>
 </template>
 
@@ -13,15 +13,24 @@
   export default {
     data () {
       return {
-        loading: false,
-        loaderr: false
       }
+    },
+    computed: {
+      loading () {
+        return this.$store.state.isLoading
+      },
+      loaderr () {
+        return this.$store.state.isLoadErr
+      }
+    },
+    metaInfo: {
+      title: '产品中心'
     },
     components: {
       Load, LoadErr
     },
     methods: {
-      loadShow (bool) {
+      /* loadShow (bool) {
         if (bool) {
           this.loading = true
         } else {
@@ -36,15 +45,15 @@
           this.loaderr = false
           this.$router.go(0)
         }
-      }
+      } */
     }
   }
 </script>
-<style src="../src/assets/css/common.css"></style>
 <style>
   html, body {
     margin: 0;
     padding: 0;
+    height:100%;
     font-size: 10px;
     color: #464646;
     background-color: #000;

@@ -117,13 +117,15 @@
     }*/
 </style>
 <script type="es6">
+  import '../assets/css/common.css'
     export default {
         data() {
             return {
                 quantity:0,
                 showQ:false,
                 pList:[],
-                token:localStorage.getItem('token')
+                token:'',
+                // token:localStorage.getItem('token')
             }
         },
         props:[
@@ -141,7 +143,10 @@
             }
         },
         mounted () {
+          if(window){
+            this.token = localStorage.getItem('token')
             this.getQuantity();
+          }
         },
         methods: {
             getQuantity () {
