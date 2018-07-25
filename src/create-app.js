@@ -9,7 +9,7 @@ import store from './store/store'
 import './assets/css/common.css'
 Axios.defaults.baseURL = process.env.VUE_ENV === 'server' ? 'http://127.0.0.1/' : 'http://wzapi.znswsse.com'
 Axios.defaults.timeout = 20000
-
+console.log(process.env.VUE_ENV)
 Axios.interceptors.request.use((config) => {
   // 在发送请求之前做些什么
   store.commit('startLoading')

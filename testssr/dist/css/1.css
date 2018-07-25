@@ -1,0 +1,23 @@
+
+.tit[data-v-25a9aab7] {
+        margin-top: 200px;
+}
+p[data-v-25a9aab7] {
+    font-size: 15px;
+    color:#f0eded;
+    text-align: center;
+}
+.btn a[data-v-25a9aab7] {
+        background: #ef8300;
+        color:#f0eded;
+        width:136px;
+        height:30px;
+        line-height: 30px;
+        margin:0 auto;
+        text-align: center;
+        display:block;
+        font-size: 12px;
+        margin-top: 43px;
+        border-radius: 6px;
+}
+

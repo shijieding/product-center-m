@@ -31,7 +31,6 @@ const store = new Vuex.Store({
       return axios.get('http://wzapi.znswsse.com/product').then(msg => {
         let data = msg.data.res_infor
         store.commit('getList', data)
-        console.log('store')
       })
     }
   }

@@ -1,0 +1,29 @@
+
+.cart_item[data-v-7ad13b7a] {
+    padding:1.2em;
+}
+div.cart_detail[data-v-7ad13b7a] {
+    width:100%;
+}
+div.address_class[data-v-7ad13b7a] {
+    padding-bottom: 0;
+}
+.cart_item[data-v-7ad13b7a]:last-child {
+    border-bottom: 4px solid #242424;
+}
+.voucher_list input.check[data-v-7ad13b7a] {
+    display:inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+.voucher_class h3[data-v-7ad13b7a] {
+    line-height: 2em;
+}
+.voucher_class h3 a[data-v-7ad13b7a] {
+    float:right;
+    color:#6a6a6a;
+}
+.pl28 span[data-v-7ad13b7a] {
+    padding-left: 36px;
+}
+

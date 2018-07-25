@@ -51,8 +51,8 @@
           }
         },
         mounted () {
-          console.log('+++++++++',this.pList)
-/*          if(this.pList && this.pList.length < 1){
+/*          console.log('+++++++++',this.pList)
+          if(this.pList && this.pList.length < 1){
             this.getPList();
           }*/
         },
@@ -72,15 +72,15 @@
           next();
         },
         methods:{
-            // getPList () {
-            //     this.$emit('loadShow',true);
-            //     this.axios.get('/product').then(msg=>{
-            //         this.pList = msg.data.res_infor;
-            //         this.$emit('loadShow',false);
-            //     }).catch(err=>{
-            //         this.$emit('loadErrShow',true);
-            //     })
-            // },
+            getPList () {
+                this.$emit('loadShow',true);
+                this.axios.get('/product').then(msg=>{
+                    this.pList = msg.data.res_infor;
+                    this.$emit('loadShow',false);
+                }).catch(err=>{
+                    this.$emit('loadErrShow',true);
+                })
+            },
             myCloseAlert (bool) {
                 this.showAlert = false;
                 if(bool){
