@@ -13,7 +13,7 @@ config = merge(baseConfig,{
   output:{
     filename:'js/[name].[chunkhash:8].js',
     // publicPath: 'http://ssfile.znswsse.com/product/mobile/',
-    publicPath: '/dist/'
+    publicPath: '/'
   },
   module:{
     rules:[

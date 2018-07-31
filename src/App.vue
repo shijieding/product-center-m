@@ -1,5 +1,5 @@
 <template>
-  <div id="app" style="background-color: #000;height:100%;">
+  <div id="app" style="background-color: #000;">
     <router-view></router-view>
     <Load v-show="loading"></Load>
     <LoadErr v-show="loaderr"></LoadErr>

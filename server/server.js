@@ -1,6 +1,7 @@
 const Koa = require('koa')
 const send = require('koa-send')
 const path = require('path')
+const request_proxy = require('./middle/request_proxy');
 
 const staticRouter = require('./routers/static')
 

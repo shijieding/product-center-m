@@ -51,10 +51,10 @@
           }
         },
         mounted () {
-/*          console.log('+++++++++',this.pList)
+          console.log('+++++++++',this.pList)
           if(this.pList && this.pList.length < 1){
             this.getPList();
-          }*/
+          }
         },
         created () {
 
@@ -75,8 +75,9 @@
             getPList () {
                 this.$emit('loadShow',true);
                 this.axios.get('/product').then(msg=>{
-                    this.pList = msg.data.res_infor;
-                    this.$emit('loadShow',false);
+                    let list = msg.data.res_infor;
+                    this.$store.commit('getList',list);
+                    console.log(this.$store.state.pList);
                 }).catch(err=>{
                     this.$emit('loadErrShow',true);
                 })
