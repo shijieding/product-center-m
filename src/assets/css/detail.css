@@ -4,6 +4,7 @@
 }
 .m_c {
     padding:5px 10px;
+    padding-bottom: 20px;
 }
 .left {
     float:left;
@@ -25,7 +26,7 @@ h2 {
     color:#f9f9f9;
 }
 .red {
-    color:red;
+    color:#e60012;
     margin-bottom: 5px;
 }
 .yellow {

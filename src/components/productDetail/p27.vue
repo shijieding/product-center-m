@@ -31,7 +31,7 @@
                 <h3 style="margin-top: 20px;color:#aaa">该页面中手机只为演示物品，不在本产品的出售范围之内。</h3>
             </div>
             <div v-show="id==2">
-                <h1>阅读器常见问题及处理</h1>
+                <h1>阅读器常见问题</h1>
                 <h2>一、液晶屏不点亮不显示解决方法</h2>
                 <h3 class="num"><span>1、</span>尝试给设备充电；</h3>
                 <h3 class="num"><span>2、</span>交厂商进行维修。</h3>
@@ -60,7 +60,7 @@
         },
         {
             id:2,
-            name:'常见问题及处理'
+            name:'常见问题'
         }
     ];
     export default {

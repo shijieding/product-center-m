@@ -102,12 +102,18 @@
             },
             P33:resolve => {
                 require(['../components/productDetail/P33.vue'],resolve)
+            },
+            P50:resolve => {
+              require(['../components/productDetail/p50.vue'],resolve)
             }
             // slider,P24,P25,P27,P29,P30,P33
         },
-        //24-保育25-育肥29-猪宝30-智能计重秤27-阅读器26-电子耳标01 34-电子耳标03 33-电子耳标钳 41-电磁阀 43-电源适配器
+        //24 46-保育25 47-育肥29-猪宝30-智能计重秤27-阅读器26-电子耳标01 34-电子耳标03 33-电子耳标钳 41-电磁阀 43-电源适配器
         mounted () {
           this.pid = this.$route.params.id;
+          console.log(this.pid)
+          this.pid === '46' ? this.pid = 24 : '';
+          this.pid === '47' ? this.pid = 25 : '';
           this.com = 'P'+this.pid;
           this.getRes();
           this.getQuantity();

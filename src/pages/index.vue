@@ -51,7 +51,12 @@
           }
         },
         mounted () {
-          console.log('+++++++++',this.pList)
+          let token =  window.location.search.substring(7);
+          // let token = '4cfdbb466f1e0b50115c3be30d2cbb09';
+          console.log(token);
+          if(token){
+            localStorage.setItem("token",token);
+          }
           if(this.pList && this.pList.length < 1){
             this.getPList();
           }
@@ -62,15 +67,15 @@
         asyncData ({ store }) {
           return store.dispatch('getRes')
         },
-        beforeRouteLeave (to,from,next) {
-          let token =  window.location.search.substring(7);
-          // let token = '2991a089901708ec5211c7a78a53bb18';
+/*        beforeRouteLeave (to,from,next) {
+          // let token =  window.location.search.substring(7);
+          let token = '4cfdbb466f1e0b50115c3be30d2cbb09';
           console.log(token);
           if(token){
             localStorage.setItem("token",token);
           }
           next();
-        },
+        },*/
         methods:{
             getPList () {
                 this.$emit('loadShow',true);
