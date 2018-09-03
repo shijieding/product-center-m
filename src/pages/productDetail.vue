@@ -8,7 +8,11 @@
         <div class="pd_msg">
             <div>
                 <p class="pleft">
-                    <span class="pname" style="text-align: left">{{detail.ProName}}</span>
+                    <span class="pname" style="text-align: left">
+                      {{detail.ProName}}
+                      {{(detail.ProNo === 24 || detail.ProNo === 25) ? '(热镀锌型)' : ''}}
+                      {{(detail.ProNo === 57 || detail.ProNo === 58) ? '(不锈钢型)' : ''}}
+                    </span>
                     <span class="ptype" style="text-align: left;font-size: 12px;">{{detail.ProModel}}</span>
                 </p>
                 <p class="pright">
@@ -91,6 +95,12 @@
             P25:resolve => {
                 require(['../components/productDetail/P25.vue'],resolve)
             },
+            P57:resolve => {
+              require(['../components/productDetail/p57.vue'],resolve)
+            },
+            P58:resolve => {
+              require(['../components/productDetail/p58.vue'],resolve)
+            },
             P27:resolve => {
                 require(['../components/productDetail/P27.vue'],resolve)
             },
@@ -112,8 +122,8 @@
         mounted () {
           this.pid = this.$route.params.id;
           console.log(this.pid)
-          this.pid === '46' ? this.pid = 24 : '';
-          this.pid === '47' ? this.pid = 25 : '';
+/*          this.pid === '46' ? this.pid = 24 : '';
+          this.pid === '47' ? this.pid = 25 : '';*/
           this.com = 'P'+this.pid;
           this.getRes();
           this.getQuantity();

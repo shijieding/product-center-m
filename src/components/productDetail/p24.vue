@@ -31,9 +31,17 @@
                 <h3 class="pd73"><span><i style="color:transparent;">1、饲料：</i>②</span>建议以舍为单位使用单独空气开关控制；</h3>
                 <h3 class="pd73"><span><i style="color:transparent;">1、饲料：</i>③</span>每台设备功率最高不超过72W，请根据设备数量，选择合适的线径布线；</h3>
                 <h3 class="pd73"><span><i style="color:transparent;">1、饲料：</i>④</span>请合理固定电源适配器及引线，以防止老鼠的啃咬。</h3>
+                <div class="red" style="overflow: hidden;">
+                  <div class="left" style="width:74px;text-align: right;">特别提醒：</div>
+                  <div class="left" style="width:77%;">如猪场电源电压过高将导致标准配置的电源适配器损坏或设备运行不正常，请正确选择合适的电源适配器(见产品中心)。</div>
+                </div>
                 <h3 class="pd73"><span>3、水源：①</span>水压范围在0.1Mpa-0.4Mpa为宜，水压不足或超压将严重影响设备正常运行；</h3>
                 <h3 class="pd73"><span><i style="color:transparent;">1、饲料：</i>②</span>请在每台设备上单独安装水阀，设备入水口为4公分外螺纹；</h3>
                 <h3 class="pd73"><span><i style="color:transparent;">1、饲料：</i>③</span>请使用清洁水源或安装水源过滤器，保证电磁阀正常工作。</h3>
+                <div class="red" style="overflow: hidden;">
+                  <div class="left" style="width:74px;text-align: right;">特别提醒：</div>
+                  <div class="left" style="width:77%;">为确保设备正常运行，精准控制水料比，建议配置水宝(见产品中心)。</div>
+                </div>
             </div>
             <div v-show="id==2">
                 <h1>保育机器人操作说明</h1>
