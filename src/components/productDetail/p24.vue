@@ -98,7 +98,7 @@
                 <h3 class="num"><span>3、</span>避雷及电源保护</h3>
                 <h3 class="num">必须保证电源插座可靠接地，并安装防雷设施，避免设备受损。</h3>
                 <h3 class="num"><span>4、</span>易损件</h3>
-                <h3 class="num">本设备电磁阀为易损件，不在保修范围内。(建议将水线和加药线分开，或经常清洁水线和电磁阀过滤网，避免水线杂物影响电磁阀正常工作)。</h3>
+                <h3 class="num">本设备电磁阀和电源适配器为易损件，不在保修范围内。(建议将水线和加料线分开，或经常清洁水线和电磁阀过滤网，避免水线杂物影响电磁阀正常工作)。</h3>
                 <h2>二、准备工作确认</h2>
                 <h3>确认以下准备工作已完成，用户请及时通知服务人员联机使用。</h3>
                 <h3 class="num"><span>1、</span>确认设备是否可靠安装到位；</h3>
@@ -185,6 +185,26 @@
                       <div class="paret_bottom">
                         <p>SSE-SB01</p>
                         <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/50'}">
+                          查看详情
+                        </router-link>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="paret">
+                  <div class="flex3">
+                    <div class="img_box">
+                      <img src="../../assets/img/pdetail/p60-01.png" alt="" style="border:1px solid #403f3f;">
+                    </div>
+                  </div>
+                  <div class="paret_detail">
+                    <div style="width:100%;">
+                      <div class="paret_top">
+                        <p>电源适配器(易损件)</p>
+                      </div>
+                      <div class="paret_bottom">
+                        <p>SSE-DY02</p>
+                        <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/60'}">
                           查看详情
                         </router-link>
                       </div>

@@ -115,6 +115,9 @@
             },
             P50:resolve => {
               require(['../components/productDetail/p50.vue'],resolve)
+            },
+            P60:resolve => {
+              require(['../components/productDetail/p60.vue'],resolve)
             }
             // slider,P24,P25,P27,P29,P30,P33
         },

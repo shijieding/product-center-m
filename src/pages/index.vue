@@ -5,7 +5,7 @@
                 <li v-for="p in pList">
                   <router-link :to="{path:'/productDetail/'+p.ProNo}">
                         <div class="p_item">
-                            <img :src='img_path+p.ProImages[0]'/>
+                            <img class="item-pic" v-lazy='img_path+p.ProImages[0]'/>
                             <div>
                                 <div class="p_d">
                                     <span>{{p.ProName}}</span>
@@ -51,8 +51,8 @@
           }
         },
         mounted () {
-          let token =  window.location.search.substring(7);
-          // let token = '4cfdbb466f1e0b50115c3be30d2cbb09';
+          // let token =  window.location.search.substring(7);
+          let token = '3e65cf87c3600ee53f24e061f0ee43b5';
           console.log(token);
           if(token){
             localStorage.setItem("token",token);

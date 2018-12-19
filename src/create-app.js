@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index'
 import Meta from 'vue-meta'
+import VueLazyLoad from 'vue-lazyload'
 import Axios from 'axios'
 import store from './store/store'
 import './assets/css/common.css'
@@ -38,6 +39,11 @@ Vue.prototype.axios = Axios
 // Vue.config.productionTip = false;
 /* eslint-disable no-new */
 Vue.use(Meta)
+Vue.use(VueLazyLoad, {
+  error: './src/assets/img/err.png',
+  loading: './src/assets/img/loading.gif',
+  preLoad: 1.3
+})
 export default () => {
   const app = new Vue({
     el: '#app',
