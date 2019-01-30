@@ -25,7 +25,7 @@
               <h3 class="img">
                 <img src="../../assets/img/pdetail/p3-01.png" alt="" style="margin-left: -65px;">
               </h3>
-                <h3 class="num"><span>2、</span>如图所示，设备俩侧共4个圆孔，用于设备固定；</h3>
+                <h3 class="num"><span>2、</span>如图所示，设备两侧共4个圆孔，用于设备固定；</h3>
                 <h3 class="num"><span>3、</span>建议配备10安培三孔防水插座（AC220V零火地三线良好接入），接通电源，设备自动开机。</h3>
             </div>
             <div v-show="id==2">

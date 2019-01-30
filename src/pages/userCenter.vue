@@ -59,7 +59,7 @@
                         <span class="tel">{{addrDetail.DeliveryPhone}}</span>
                     </p>
                     <p>
-                        <span class="address">{{city}} {{addrDetail.DetailAddr}}</span>
+                        <span class="address">{{addrDetail.Province}}{{addrDetail.City}}{{addrDetail.Area}}{{addrDetail.DetailAddr}}</span>
                     </p>
                 </div>
 
@@ -181,7 +181,7 @@
                         for(let i=0;i<msg.data.res_infor.length;i++){
                             if(msg.data.res_infor[i].IsDefault){
                                 this.addrDetail = msg.data.res_infor[i];
-                                this.city = this.getCity(i,msg.data)
+                                console.log(this.addrDetail)
                             }
                         }
                     }
@@ -200,43 +200,6 @@
                 }).catch(err=>{
                     this.$emit('loadErrShow',true);
                 });
-            },
-            getCity (i,msg) {
-                console.log(msg);
-                let pro = msg.res_infor[i].Province;
-                let city = msg.res_infor[i].City;
-                let area = msg.res_infor[i].Area;
-                console.log(pro);
-                let spro,scity,sarea;
-                $.ajax({
-                    url:'http://ssfile.znswsse.com/product/mobile/static/area.json',
-                    type:'GET',
-                    dataType:'json',
-                    async:false,
-                    success:function(msg){
-                        var list = msg.lists;
-                        $.each(list, function(i,sheng) {
-                            if(sheng.code==pro){
-                                spro = sheng.area;
-                                $.each(sheng.city,function(i,shi){
-                                    if(shi.code==city){
-                                        scity = shi.area;
-                                        $.each(shi.city,function(i,xian){
-                                            if(xian.code==area){
-                                                sarea = xian.area
-                                            }
-                                        })
-                                    }
-                                })
-                            }
-                        });
-                    },
-                    error: function (msg) {
-                        console.log(msg);
-                        console.log('请求错误');
-                    }
-                });
-                return spro+' '+scity+' '+sarea;
             }
         }
     }

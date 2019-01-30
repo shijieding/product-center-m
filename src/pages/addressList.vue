@@ -9,7 +9,7 @@
                             <span class="tel">{{addr.DeliveryPhone}}</span>
                         </p>
                         <p>
-                            <span class="address">{{getCity(addr)}} {{addr.DetailAddr}}</span>
+                            <span class="address">{{addr.Province}}{{addr.City}}{{addr.Area}}{{addr.DetailAddr}}</span>
                         </p>
                         <div class="compile">
                             <div class="default">
@@ -82,6 +82,7 @@
                     if(msg.data.res_infor && msg.data.res_infor.length > 0){
                         this.hasAddr = true;
                         this.addrList = msg.data.res_infor;
+                        console.log(this.addrList)
                     }
                 }).catch(err=>{
                     this.$emit('loadErrShow',true);
@@ -114,41 +115,6 @@
                   })
               }
             },
-            getCity (msg) {
-                let pro = msg.Province;
-                let city = msg.City;
-                let area = msg.Area;
-                let spro,scity,sarea;
-                $.ajax({
-                    url:'http://ssfile.znswsse.com/product/mobile/static/area.json',
-                    type:'GET',
-                    dataType:'json',
-                    async:false,
-                    success:function(msg){
-                        var list = msg.lists;
-                        $.each(list, function(i,sheng) {
-                            if(sheng.code==pro){
-                                spro = sheng.area;
-                                $.each(sheng.city,function(i,shi){
-                                    if(shi.code==city){
-                                        scity = shi.area;
-                                        $.each(shi.city,function(i,xian){
-                                            if(xian.code==area){
-                                                sarea = xian.area
-                                            }
-                                        })
-                                    }
-                                })
-                            }
-                        });
-                    },
-                    error: function (msg) {
-                        console.log(msg);
-                        console.log('请求错误');
-                    }
-                });
-                return spro+' '+scity+' '+sarea;
-            }
         }
     }
 </script>

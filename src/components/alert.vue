@@ -13,20 +13,8 @@
         </div>
     </div>
 </template>
+
 <style>
-  .mark {
-    position: absolute;
-    z-index: 99;
-    left:0;
-    bottom:0;
-    top:0;
-    right: 0;
-    width:100%;
-    height:100%;
-    /*background-color: rgba(200,200,200,0.1);*/
-  }
-</style>
-<!--<style>
     .mark {
         position: absolute;
         z-index: 99;
@@ -76,7 +64,7 @@
     .alert-content .button-box button:hover {
         cursor:pointer;
     }
-</style>-->
+</style>
 <script type="es6">
     export default {
         data () {

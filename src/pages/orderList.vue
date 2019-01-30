@@ -17,7 +17,7 @@
                             <div>
                                 <div class="order_key">产品型号：</div>
                                 <div class="order_val">
-                                    <p v-for="p in o.ProductList">
+                                  <p v-for="p in o.ProductList">
                                         <span class="pname">{{p.ProName}}（{{p.ProModel}}）</span>
                                         <span class="pnum">{{p.Quantity}}台</span>
                                     </p>

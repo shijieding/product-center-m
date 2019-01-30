@@ -51,8 +51,8 @@
           }
         },
         mounted () {
-          // let token =  window.location.search.substring(7);
-          let token = '3e65cf87c3600ee53f24e061f0ee43b5';
+          let token =  window.location.search.substring(7);
+          // let token = '49d59675e1a0e40aa32de02c824a9014';
           console.log(token);
           if(token){
             localStorage.setItem("token",token);

@@ -108,12 +108,10 @@
         methods: {
             postAddr () {
                 this.$emit('loadShow',true);
-                console.log(this.picker);
-                let address = this.senAddress(this.picker);
                 let jsonstr ={
-                    Area:address[2],
-                    City:address[1],
-                    Province:address[0],
+                    Area:this.picker[2],
+                    City:this.picker[1],
+                    Province:this.picker[0],
                     DeliveryPhone:this.uPhone,
                     DeliveryUserName:this.uName,
                     DetailAddr:this.detailAddr
@@ -157,7 +155,7 @@
                                 this.Area = msg.data.res_infor[i].Area;
                                 this.City = msg.data.res_infor[i].City;
                                 this.Province = msg.data.res_infor[i].Province;
-                                this.picker = this.getCity(msg.data.res_infor[i]);
+                                this.picker = this.Province + this.City + this.Area;
                             }
                         }
                         console.log(this.picker);
@@ -168,11 +166,10 @@
             },
             updateAddr () {
                 this.$emit('loadShow',true);
-                let address = this.senAddress(this.picker);
                 let jsonstr ={
-                    Area:address[2],
-                    City:address[1],
-                    Province:address[0],
+                    Area:this.picker[2],
+                    City:this.picker[1],
+                    Province:this.picker[0],
                     DeliveryPhone:this.uPhone,
                     DeliveryUserName:this.uName,
                     DetailAddr:this.detailAddr,
@@ -193,79 +190,13 @@
                     alert('请填写完整的信息');
                 }
 
-            },
-            senAddress (add) {
-                let address = add;
-                let pro = address[0];
-                let city = address[1];
-                let area = address[2];
-                let spro,scity,sarea;
-                let addArr = [];
-                $.ajax({
-                    url:'http://ssfile.znswsse.com/product/mobile/static/area.json',
-                    type:'GET',
-                    dataType:'json',
-                    async:false,
-                    success:function(msg){
-                        var list = msg.lists;
-                        $.each(list, function(i,sheng) {
-                            if(sheng.area==pro){
-                                spro = sheng.code;
-                                addArr.push(spro);
-                                $.each(sheng.city,function(i,shi){
-                                    if(shi.area==city){
-                                        scity = shi.code;
-                                        addArr.push(scity);
-                                        $.each(shi.city,function(i,xian){
-                                            if(xian.area==area){
-                                                sarea = xian.code;
-                                                addArr.push(sarea);
-                                            }
-                                        })
-                                    }
-                                })
-                            }
-                        });
-                    }
-                });
-                //console.log(addArr);
-                return addArr;
-            },
-            getCity (msg) {
-                let pro = msg.Province;
-                let city = msg.City;
-                let area = msg.Area;
-                let spro,scity,sarea;
-                $.ajax({
-                    url:'http://ssfile.znswsse.com/product/mobile/static/area.json',
-                    type:'GET',
-                    dataType:'json',
-                    async:false,
-                    success:function(msg){
-                        var list = msg.lists;
-                        $.each(list, function(i,sheng) {
-                            if(sheng.code==pro){
-                                spro = sheng.area;
-                                $.each(sheng.city,function(i,shi){
-                                    if(shi.code==city){
-                                        scity = shi.area;
-                                        $.each(shi.city,function(i,xian){
-                                            if(xian.code==area){
-                                                sarea = xian.area
-                                            }
-                                        })
-                                    }
-                                })
-                            }
-                        });
-                    },
-                    error: function (msg) {
-                        console.log(msg);
-                        console.log('请求错误');
-                    }
-                });
-                return spro+' '+scity+' '+sarea;
             }
         }
     }
 </script>
+
+<style>
+  body {
+    font-size: 10px;
+  }
+</style>
