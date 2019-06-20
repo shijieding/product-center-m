@@ -13,9 +13,23 @@
         <h2>一、设备储存、安装条件</h2>
         <h3>设备应储存、安装于室内。</h3>
         <h2>二、设备清单</h2>
-        <h3 class="num"><span>1、</span>饲喂设备 &nbsp;&nbsp;&nbsp;1台；</h3>
-        <h3 class="num"><span>2、</span>电源适配器 &nbsp;&nbsp;&nbsp;1套；</h3>
-        <h3 class="num"><span>3、</span>除饲喂设备和电源适配器以外，在安装过程中所涉及到的管、线、水阀、插座等，使用方自行准备；</h3>
+        <h3 class="num"><span>1、</span>产品包装及内部部件说明</h3>
+        <h3 class="img">
+          <img src="http://znswsse.com:8031/pdetail/p21.png" alt="">
+        </h3>
+        <h3 class="num m44"><span>①</span>产品外包装</h3>
+        <h3 class="num m44"><span>②</span>产品包装内部形态</h3>
+        <h3 class="num m44"><span>③</span>料盘外包装</h3>
+        <h3 class="num m44"><span>④</span>料盘包装内部形态</h3>
+        <h3 class="num m44"><span>⑤</span>电源适配器</h3>
+        <h3 class="num m44"><span>⑥</span>标准件包</h3>
+        <h3 class="num m44"><span>⑦</span>标准件包内含：自攻丝*8、平垫*4、弹垫*4、螺母*4、盖母*4</h3>
+        <h3 class="num m44"><span>⑧</span>育肥机器人主支架</h3>
+        <h3 class="num">料筒:（无包装，单独运输，应轻拿轻放）。</h3>
+        <h3 class="img">
+          <img src="http://znswsse.com:8031/pdetail/p22.png" alt="">
+        </h3>
+        <h3 class="num"><span>2、</span>除饲喂设备和电源适配器以外，在安装过程中所涉及到的管、线、水阀、插座等，使用方自行准备；</h3>
         <h3 class="num"><span>4、</span>设备图示</h3>
         <h3 class="img">
           <img src="../../assets/img/pdetail/p47-01.png" alt="">
@@ -33,7 +47,7 @@
         <h3 class="pd73"><span><i style="color:transparent;">1、饲料：</i>④</span>请合理固定电源适配器及引线，以防止老鼠的啃咬。</h3>
         <div class="red" style="overflow: hidden;">
           <div class="left" style="width:74px;text-align: right;">特别提醒：</div>
-          <div class="left" style="width:77%;">如猪场电源电压过高将导致标准配置的电源适配器损坏或设备运行不正常，请正确选择合适的电源适配器(见产品中心)。</div>
+          <div class="left" style="width:77%;">请猪场保证电压平稳正常，否则容易导致电源适配器损坏或设备运行不正常。</div>
         </div>
         <h3 class="pd73"><span>3、水源：①</span>水压范围在0.1Mpa-0.4Mpa为宜，水压不足或超压将严重影响设备正常运行；</h3>
         <h3 class="pd73"><span><i style="color:transparent;">1、饲料：</i>②</span>请在每台设备上单独安装水阀，设备入水口为4公分外螺纹；</h3>
@@ -66,7 +80,7 @@
         <h3 class="num m44"><span>②</span>用水冲洗设备，包括料桶内残余饲料、粉尘等，需冲洗干净；</h3>
         <h3 class="num m44"><span>③</span>设备冲洗干净后，断电晾干。</h3>
         <h2 class="yellow">二、操作注意事项</h2>
-        <h3 class="num yellow"><span>1、</span>确认料筒内饲料充足（粉料、颗粒料均可，建议使用颗粒料）；</h3>
+        <h3 class="num yellow"><span>1、</span>确认料桶内饲料充足（粉料、颗粒料均可，建议使用颗粒料）；</h3>
         <h3 class="num yellow"><span>2、</span>确认管路供水正常（水压范围在0.1Mpa~0.4Mpa为宜）；</h3>
         <h3 class="num yellow"><span>3、</span>确认设备供电正常（设备运行需电源供电，频繁断电将影响正常饲喂）。</h3>
       </div>
@@ -80,31 +94,71 @@
         <h3 class="img">
           <img src="../../assets/img/pdetail/p2-04.png" alt="">
         </h3>
-        <h3 class="num"><span>2、</span>设备固定方法</h3>
-        <h3 class="num m44"><span>①</span>可利用膨胀螺栓将设备地脚固定于水泥地面；</h3>
-        <h3 class="num m44"><span>②</span>可利用铁丝将地脚捆绑与水泥漏缝地板上；</h3>
-        <h3 class="num m44"><span>③</span>可利用螺栓将地脚固定与水泥漏缝地板上；</h3>
-        <h3 class="num m44"><span>④</span>可使用水泥将底部浇筑牢固；</h3>
-        <div style="overflow:hidden">
-          <div style="float:left;width:55%">
-            <h3 class="num m44"><span>⑤</span>立柱两侧可使用铁丝或M8螺栓固定连接。</h3>
-            <h3 class="num m44 red" style="font-size: 10px;line-height: 12px;">两侧立柱内因有导线和水管，严禁焊接或钻孔。</h3>
-          </div>
-          <h3 class="img" style="float:left;width:45%;margin:0;">
-            <img src="../../assets/img/pdetail/p1-06.png" alt="" style="margin:0;">
-          </h3>
-        </div>
-
-        <h3 class="num"><span>3、</span>避雷及电源保护</h3>
+        <h3 class="num"><span>2、</span>避雷及电源保护</h3>
         <h3 class="num">必须保证电源插座可靠接地，并安装防雷设施，避免设备受损。</h3>
-        <h3 class="num"><span>4、</span>易损件</h3>
+        <h3 class="num"><span>3、</span>易损件</h3>
         <h3 class="num">本设备电磁阀和电源适配器为易损件，不在保修范围内。(建议将水线和加药线分开，或经常清洁水线和电磁阀过滤网，避免水线杂物影响电磁阀正常工作)。</h3>
-        <h2>二、准备工作确认</h2>
-        <h3>确认以下准备工作已完成，用户请及时通知服务人员联机使用。</h3>
-        <h3 class="num"><span>1、</span>确认设备是否可靠安装到位；</h3>
-        <h3 class="num"><span>2、</span>确认电源、水阀接入是否正常；</h3>
-        <h3 class="num"><span>3、</span>确认供料是否正常；</h3>
-        <h3 class="num"><span>4、</span>确认猪场内手机通信信号是否正常。</h3>
+        <div class="red" style="overflow: hidden;">
+          <div class="left" style="width:74px;text-align: right;">特别提醒：</div>
+          <div class="left" style="width:77%;">应经常观察各紧固件是否松动，如发现问题应马上处理避免因紧固件松动产生故障隐患，影响设备正常使用。</div>
+        </div>
+        <h2>二、安装步骤</h2>
+        <h3 class="num"><span>1、</span>料盘固定</h3>
+        <h3 class="num">用户根据自身需求和现场实际情况，自行选择合适的安装固定方式。现提供以下两种安装方式，仅供参考。</h3>
+        <h3 class="num">1.1、安装在漏缝地板上</h3>
+        <h3 class="img">
+          <img src="http://znswsse.com:8031/pdetail/p25.png" alt="">
+        </h3>
+        <h3 class="num m44"><span>①</span>T型螺栓4个、平垫4个、弹垫4个、螺母4个、盖母4个，此五件零件及尺寸需用户根据现场实际情况确定并自备；</h3>
+        <h3 class="num m44"><span>②</span>T型螺栓在漏缝地板下的放置方式；</h3>
+        <h3 class="num m44"><span>③</span>T型螺栓在漏缝地板上安装方式，平垫、弹垫、螺母、盖母依次从下到上放置并紧固，料盘即安装完成。</h3>
+        <h3 class="num">1.2、安装在水泥地面上</h3>
+        <h3 class="img">
+          <img src="http://znswsse.com:8031/pdetail/p26.png">
+        </h3>
+        <h3 class="num m44"><span>①</span>水泥地面建议用膨胀螺栓安装固定，膨胀螺栓规格需用户根据现场情况自定；</h3>
+        <h3 class="num m44"><span>②</span>平垫、弹垫、螺母、盖母依次从下到上放置并紧固，料盘即安装完成。</h3>
+        <div class="red" style="overflow: hidden;">
+          <div class="left" style="width:44px;text-align: right;">注意：</div>
+          <div class="left" style="width:77%;">
+            <div>1、无论选用何种安装固定方式，都应确保与地面安装牢固、耐用，并且保证料盘水平；</div>
+            <div>2、为确保大猪阶段设备牢固不松动，建议无论用哪种方式固定，最后都应该用水泥将料盆、底脚及固定连接件加固。</div>
+          </div>
+        </div>
+        <h3 class="num"><span>2、</span>育肥机器人主支架固定</h3>
+        <h3 class="img">
+          <img src="http://znswsse.com:8031/pdetail/p27.png">
+        </h3>
+        <h3 class="num m44"><span>①、</span>按图示中箭头所指的方向将育肥机器人主支架放在已固定好的料盘上；</h3>
+        <h3 class="num m44"><span>②、</span>平垫、弹垫、螺母、盖母从下到上放置并紧固，保证料盘与育肥机器人主支架连接紧固。</h3>
+        <div class="red" style="overflow: hidden;">
+          <div class="left" style="width:44px;text-align: right;">注意：</div>
+          <div class="left" style="width:77%;">
+            <div>育肥机器人主支架与料盘固定所需平垫、弹垫、螺母、盖母在标准件包内随产品赠送（注意保管，谨防丢失！）。</div>
+          </div>
+        </div>
+        <h3 class="num"><span>3、</span>料桶安装</h3>
+        <h3 class="img">
+          <img src="http://znswsse.com:8031/pdetail/p28.png">
+        </h3>
+        <h3 class="num m44"><span>①</span>育肥机器人主支架每边上下共有4个自攻螺钉的通孔，两边共8个；</h3>
+        <h3 class="num m44"><span>②</span>下料机构支撑料桶的U型槽；</h3>
+        <h3 class="num m44"><span>③</span>料桶的每边上下共有4个自攻螺钉通槽，两边共8个；</h3>
+        <h3 class="num m44"><span>④</span>料桶底部与下料机构连接部分；</h3>
+        <h3 class="num m44"><span>⑤</span>按图示方向将料桶安装到育肥机器人主支架上；</h3>
+        <h3 class="num m44"><span>⑥</span>料桶底部与下料机构U型槽底部完全贴合；</h3>
+        <h3 class="num m44"><span>⑦</span>料桶和育肥机器人主支架通过自攻螺钉连接紧固；</h3>
+        <h3 class="num m44"><span>⑧</span>料桶与育肥机器人主支架安装固定完成。</h3>
+
+        <div class="red" style="overflow: hidden;">
+          <div class="left" style="width:44px;text-align: right;">注意：</div>
+          <div class="left" style="width:77%;">
+            <div>1、安装、固定料桶时，注意将料桶两侧自攻螺钉通槽与育肥机器人主支架两侧自攻螺钉通孔对齐；</div>
+            <div>2、可用橡胶锤轻击料桶上部边缘，以保证料桶底部与下料机构U型槽底部完全贴合；</div>
+            <div>3、自攻螺钉8颗，在标准件包内随产品赠送（注意保管，谨防丢失！）；</div>
+            <div>4、两侧立柱内因有导线和水管，严禁焊接或钻孔。</div>
+          </div>
+        </div>
       </div>
       <div v-show="id==4">
         <h1>育肥机器人常见问题</h1>
@@ -130,88 +184,7 @@
       </div>
       <div v-show="id==5">
         <h1>育肥机器人相关配件</h1>
-        <ul class="paretlist">
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p1-08.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>电磁阀(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-DCF01</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/41'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p1-09.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>电源适配器(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-DY01</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/43'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p1-10.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>水宝(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-SB01</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/50'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p60-01.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>电源适配器(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-DY02</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/60'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <peijian></peijian>
       </div>
     </div>
 
@@ -220,6 +193,8 @@
 </template>
 
 <script type="es6">
+  import peijian from '../productDetail/bypeijian.vue'
+
   const list = [
     {
       id:1,
@@ -249,7 +224,9 @@
         id:1
       }
     },
-    components: {},
+    components: {
+      peijian
+    },
     methods: {
       toggle(n){
         this.id = n;

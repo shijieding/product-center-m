@@ -66,7 +66,7 @@
         <h3 class="num m44"><span>②</span>用水冲洗设备，包括料桶内残余饲料、粉尘等，需冲洗干净；</h3>
         <h3 class="num m44"><span>③</span>设备冲洗干净后，断电晾干。</h3>
         <h2 class="yellow">二、操作注意事项</h2>
-        <h3 class="num yellow"><span>1、</span>确认料筒内饲料充足（粉料、颗粒料均可，建议使用颗粒料）；</h3>
+        <h3 class="num yellow"><span>1、</span>确认料桶内饲料充足（粉料、颗粒料均可，建议使用颗粒料）；</h3>
         <h3 class="num yellow"><span>2、</span>确认管路供水正常（水压范围在0.1Mpa~0.4Mpa为宜）；</h3>
         <h3 class="num yellow"><span>3、</span>确认设备供电正常（设备运行需电源供电，频繁断电将影响正常饲喂）。</h3>
       </div>
@@ -130,88 +130,7 @@
       </div>
       <div v-show="id==5">
         <h1>保育机器人相关配件</h1>
-        <ul class="paretlist">
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p1-08.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>电磁阀(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-DCF01</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/41'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p1-09.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>电源适配器(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-DY01</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/43'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p1-10.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>水宝(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-SB01</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/50'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="paret">
-            <div class="flex3">
-              <div class="img_box">
-                <img src="../../assets/img/pdetail/p60-01.png" alt="" style="border:1px solid #403f3f;">
-              </div>
-            </div>
-            <div class="paret_detail">
-              <div style="width:100%;">
-                <div class="paret_top">
-                  <p>电源适配器(易损件)</p>
-                </div>
-                <div class="paret_bottom">
-                  <p>SSE-DY02</p>
-                  <router-link style="color:#ef8300;margin-bottom: 10px;font-size:15px;line-height: 20px;" :to="{path:'/productDetail/60'}">
-                    查看详情
-                  </router-link>
-                </div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <peijian></peijian>
       </div>
     </div>
 
@@ -219,6 +138,8 @@
   </div>
 </template>
 <script type="es6">
+  import peijian from '../productDetail/bypeijian.vue'
+
   const list = [
     {
       id:1,
@@ -249,7 +170,9 @@
         id:1
       }
     },
-    components: {},
+    components: {
+      peijian
+    },
     methods: {
       toggle(n){
         this.id = n;

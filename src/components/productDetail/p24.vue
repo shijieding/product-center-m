@@ -66,7 +66,7 @@
                 <h3 class="num m44"><span>②</span>用水冲洗设备，包括料桶内残余饲料、粉尘等，需冲洗干净；</h3>
                 <h3 class="num m44"><span>③</span>设备冲洗干净后，断电晾干。</h3>
                 <h2 class="yellow">二、操作注意事项</h2>
-                <h3 class="num yellow"><span>1、</span>确认料筒内饲料充足（粉料、颗粒料均可，建议使用颗粒料）；</h3>
+                <h3 class="num yellow"><span>1、</span>确认料桶内饲料充足（粉料、颗粒料均可，建议使用颗粒料）；</h3>
                 <h3 class="num yellow"><span>2、</span>确认管路供水正常（水压范围在0.1Mpa~0.4Mpa为宜）；</h3>
                 <h3 class="num yellow"><span>3、</span>确认设备供电正常（设备运行需电源供电，频繁断电将影响正常饲喂）。</h3>
             </div>

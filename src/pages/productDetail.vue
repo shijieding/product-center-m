@@ -10,14 +10,15 @@
                 <p class="pleft">
                     <span class="pname" style="text-align: left">
                       {{detail.ProName}}
-                      {{(detail.ProNo === 24 || detail.ProNo === 25) ? '(热镀锌型)' : ''}}
-                      {{(detail.ProNo === 57 || detail.ProNo === 58) ? '(不锈钢型)' : ''}}
+                      <!--{{(detail.ProNo === 24 || detail.ProNo === 25) ? '(热镀锌型)' : ''}}-->
+                      <!--{{(detail.ProNo === 57 || detail.ProNo === 58) ? '(不锈钢型)' : ''}}-->
                     </span>
                     <span class="ptype" style="text-align: left;font-size: 12px;">{{detail.ProModel}}</span>
                 </p>
                 <p class="pright">
                     <span style="text-align: right"><b class="price">￥{{detail.SalePrice?detail.SalePrice.toFixed(2):0}}元</b></span>
-                    <span style="text-align: right;font-size: 12px;" class="small">{{detail.ProStatus}}</span>
+                    <span v-html="detail.ProAddDes" v-if="detail.ProAddDes"></span>
+                  <span style="text-align: right;font-size: 12px;" class="small">{{detail.ProStatus}}</span>
                 </p>
             </div>
         </div>
@@ -118,10 +119,26 @@
             },
             P60:resolve => {
               require(['../components/productDetail/p60.vue'],resolve)
-            }
+            },
+            P61:resolve => {
+              require(['../components/productDetail/p61.vue'],resolve)
+            },
+            P62:resolve => {
+              require(['../components/productDetail/p62.vue'],resolve)
+            },
+            P65:resolve => {
+              require(['../components/productDetail/p65.vue'],resolve)
+            },
+            P66:resolve => {
+              require(['../components/productDetail/p66.vue'],resolve)
+            },
+            P67:resolve => {
+              require(['../components/productDetail/p67.vue'],resolve)
+            },
             // slider,P24,P25,P27,P29,P30,P33
         },
         //24 46-保育25 47-育肥29-猪宝30-智能计重秤27-阅读器26-电子耳标01 34-电子耳标03 33-电子耳标钳 41-电磁阀 43-电源适配器
+      //   61-保育3.0  66育肥3.0  65-产房  67-饮水碗
         mounted () {
           this.pid = this.$route.params.id;
           console.log(this.pid)

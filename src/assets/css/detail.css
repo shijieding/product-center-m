@@ -80,6 +80,17 @@ div.small {
 .paret .flex6 {
   flex:6;
 }
+.paret .img_box {
+  padding:10px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.paret img {
+  width:80%;
+  height:96px;
+  border:1px solid #403f3f;
+}
 .paret_detail {
   padding: 10px;display: flex;align-items: flex-end;flex:6;
 }
