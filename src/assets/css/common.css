@@ -1,14 +1,14 @@
 html,body {
     margin:0; padding:0;
     font-size: 10px;
-    color:#464646;
-    background-color: #000;
+    color:#777;
+    background-color: #15161a;
 }
 body {
     font-family:Helvetica;
     overflow: scroll;
     overflow-x: auto;
-    color:#fff;
+    color:#777;
 }
 div,p,ul,li,ol,dl,dt,dd,span,img,input,table,h1,h2,h3,h4,h5,h6 {
     margin:0; padding:0; border:0; list-style:none; list-style-type:none;
@@ -31,6 +31,29 @@ a:visited {
 .my_content {
     padding:1.2em;
 }
+/*主页*/
+.ly-tabbar {
+    background-color: #000;
+    border:none;
+    box-shadow: none;
+  }
+  .ly-tab-list {
+    padding:10px;
+  }
+  .ly-tab-item {
+    /* padding:0 15px; */
+    font-size: 15px;
+    color:#5f5f65;
+  }
+  .ly-tab-item:not(:first-child) span::before {
+    content:'';
+    display:inline-block;
+    height:10px;
+    width:0;
+    border-right: 1px solid #ccc;
+    margin-right: 20px;
+  }
+
 
 /*头部*/
 .header_box {
@@ -53,7 +76,7 @@ a:visited {
 }
 
 
-/*产品列表*/
+/* 产品列表
 .p_list {
     display:flex;
     flex-wrap: wrap;
@@ -88,15 +111,12 @@ a:visited {
 }
 .p_item div.p_d span {
     text-align: center;
-    /*-webkit-width:9em;*/
     font-size:1em;
     line-height: 1.5em;
-    /*-webkit-transform-origin-x: 0;*/
-    /*-webkit-transform: scale(0.8);*/
 }
 .p_item p span.small {
     font-size: .8em;
-}
+} */
 /*没有信息*/
 
 .no_msg {
@@ -882,15 +902,8 @@ i.no_data {
     background: url("../img/icon.png") no-repeat -94px -88px;
     margin:15em auto 2em;
 }
-i.no_cart {
-    width:70px;
-    height:73px;
-    display:block;
-    background: url("../img/icon.png") no-repeat -189px -88px;
-    margin:15em auto 2em;
-}
 div.no_data p {
-    font-size: 1.8em;
+    font-size: 15px;
 }
 
 

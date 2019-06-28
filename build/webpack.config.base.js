@@ -32,6 +32,20 @@ const config = {
         options:createVueLoaderOptions(isDev)
       },
       {
+        test: /\.styl/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          'stylus-loader'
+        ]
+      },
+      {
         test:/\.jsx$/,
         loader:'babel-loader'
       },
